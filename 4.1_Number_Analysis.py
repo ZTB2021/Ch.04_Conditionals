@@ -23,15 +23,13 @@ if x % 2 == 1:
     print("The number is odd")
 else:
     print("The number is even")
-if 0 > x:
+if x < 0:
     print("It is negative")
-elif 0 > x:
+elif x > 0:
     print("It is positive")
 else:
     print("It is zero")
-if 100 <= x:
+if x<=100 and x>=-100:
     print("It is inclusive")
-elif -100 >= x:
-    print("Is in Inclusive")
 else:
     print("It is Exclusive")

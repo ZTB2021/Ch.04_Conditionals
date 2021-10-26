@@ -6,20 +6,20 @@ if midichlorians > 10000:
 else:
     print("Jedi, you will never be.")
  # 2. Make the following program work. (3 mistakes)
-x = input("Enter a number: ")
+x = int(input("Enter a number: "))
 if x == 3:
     print("You entered 3")
   # 3. Make the following program work. (4 mistakes)
 answer = input("What is the name of Poe Dameron's Droid? ")
-a = "name of droid"
-if a == "BB8":
+
+if answer == "BB8":
     print("Correct!")
 else:
     print("Incorrect! It is BB8.")
   # 4. Make the following program work. (4 mistakes)
 x = input("Name one of the top 3 greatest Jedi.")
-jedi = "name of jedi"
-if jedi == input("Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi"):
+
+if x.lower() == "yoda" or x.lower() == "luke skywalker" or x.lower() == "obi-wan kenobi":
     print("That is correct!")
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
  #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
@@ -28,7 +28,7 @@ print("A. Jedi Master")
 print("B. Sith Lord")
 print("C. Droid")
 user_input = input("Which side do you want to be")
-if user_input.upper() == "A" or "Jedi Master":
+if user_input.upper() == "A" or "JEDI MASTER":
     x = 1000
 elif user_input.upper() == "B" or "SITH LORD":
     x = 900
